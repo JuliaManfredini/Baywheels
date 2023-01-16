@@ -1,0 +1,8 @@
+# Install extensions
+CREATE EXTENSION cube
+CREATE EXTENSION earthdistance
+		
+# Query to find distance
+SELECT *, 
+(POINT (start_long, start_lat) <@> POINT (end_long, end_lat)) as trip_distance_miles_euclidian
+FROM public.combined_master_clean
