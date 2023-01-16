@@ -11,7 +11,7 @@
 
 ## Change dataset from a view to a table:
 
-[View to table](https://github.com/JuliaManfredini/Baywheels/blob/main/View%20to%20Table)
+[View to table] (https://github.com/JuliaManfredini/Baywheels/blob/main/View%20to%20Table)
 
 ## Update start and end station ID's into one master table:
 
