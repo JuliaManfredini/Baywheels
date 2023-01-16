@@ -3,7 +3,7 @@
 
 ## To upload files into pgAdmin:
 
-[Uploading Files](https://github.com/JuliaManfredini/Baywheels/blob/main/Query%20Index)
+[Uploading Files](https://github.com/JuliaManfredini/Baywheels/blob/main/Uploading%20Files)
 
 ## Merge tables into one dataset:
 
@@ -11,7 +11,7 @@
 
 ## Change dataset from a view to a table:
 
-[View to table] (https://github.com/JuliaManfredini/Baywheels/blob/main/View%20to%20Table)
+[View to table](https://github.com/JuliaManfredini/Baywheels/blob/main/View%20to%20Table)
 
 ## Update start and end station ID's into one master table:
 
