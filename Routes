@@ -1,6 +1,6 @@
 
 select 
-  route, 
+	route, 
 	t1.start_station_id, 
 	t1.start_station_capacity, 
 	t1.end_station_id, 
@@ -8,8 +8,6 @@ select
 	count(t1.*),
 	(((abs(start_lat-end_lat))*69) + ((abs(start_long-end_long)) *54.6)) as manhattan_dist_mi
 from 
-(select *, 
-  CONCAT(start_station_id, ' to ', end_station_id) route
-from public.oakland_master_2) as t1
-
+	(select *, CONCAT(start_station_id, ' to ', end_station_id) route
+	from public.oakland_master_2) as t1
 group by 1,2,5,3,4, start_lat, start_long, end_lat, end_long
