@@ -1,0 +1,9 @@
+	CREATE VIEW baywheels_tripdata_YYYY_MM_view AS
+	(select * 
+	from table_1
+	union all
+	select *
+	from table_2
+	union all 
+	select *
+from table_3)
