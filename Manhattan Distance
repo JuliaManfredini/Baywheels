@@ -1,0 +1,1 @@
+SELECT (((abs(start_lat-end_lat))*69) + ((abs(start_long-end_long)) *69)) as manhattan_dist_miles
