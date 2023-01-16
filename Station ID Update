@@ -1,0 +1,23 @@
+with
+t1 as 
+(select *, start_station_id as former_start_station_id
+ from public.baywheels_tripdata_2020_04_to_2022_08)
+ 
+select 
+	t1.Ride_ID,
+	t1.Bike_type,
+	t1.Start_Time,
+	t1.End_Time ,
+	t1.Start_Station_name,
+	ref.Start_Station_id as legacy_start_station_id,
+	t1.former_start_station_id,
+	t1.Start_Lat,
+	t1.Start_Long,
+	t1.End_Station_Name,
+	t1.end_station_id,
+	t1.End_Lat,
+	t1.End_Long,
+	t1.Member_type
+from t1
+left join public.start_station_ref_cleaned as ref
+on ref.start_station_name = t1.start_station_name
